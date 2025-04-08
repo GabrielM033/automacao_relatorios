@@ -16,19 +16,20 @@ class StartOperational():
 
     def relatorio_operational(self):
 
-        time.sleep(5)
-        py.click(environment.open_browser)
+        #time.sleep(5)
+        #py.click(environment.open_browser)
 
-        for city_current in citys.citys_list:
+        for city_name in citys.citys_list:
 
-            city_name_file = (f"Relatorios_Operacionais-{city_current}-{environment.mmyy}.pdf")
+            city_name_file = (f"Relatorios_Operacionais-{city_name}-{environment.mmyy}.pdf")
 
-            if isinstance(citys.citys_list, list):
+            if isinstance(citys.citys_list, dict) and citys.citys_list[city_name] == 1:
                 
                 #Valida se o arquivo já está criado, para não criar duplicado.
-                if city_name_file in environment.files_created:
+                if self.list_files_created(city_name):
                     
                     continue
+
 
                 time.sleep(3)
                 py.click(environment.box_name_city_1)
@@ -38,7 +39,7 @@ class StartOperational():
                 py.press('backspace')
                 
                 time.sleep(5)
-                keyboard.write(city_current)
+                keyboard.write(city_name)
                 
                 time.sleep(10)
                 py.click(environment.select_city_checkbox_1)
@@ -66,7 +67,7 @@ class StartOperational():
                 py.press('backspace')
 
                 time.sleep(5)
-                keyboard.write(city_current)
+                keyboard.write(city_name)
 
                 time.sleep(10)
                 py.click(environment.select_city_checkbox_2)
@@ -111,12 +112,19 @@ class StartOperational():
 
                 #Cidade X não criada. Pensar em criar um log no except!
                 except Exception as e:
-                    continue 
-
-            else:
-                sys.exit()
+                    continue            
 
         
+    def list_files_created(self, city):
+
+        #Pasta com os arquivos que já foi feito o download
+        files_created = os.listdir('C:\\Users\\gabri\\OneDrive - ladydriver.com.br\\Downloads_relatorios')
+
+        if city in files_created:
+            
+            return True
+        else:
+            return False
 
 
             
