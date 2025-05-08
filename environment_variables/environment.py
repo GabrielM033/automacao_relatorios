@@ -3,26 +3,23 @@
 import os
 import pyautogui as py
 
+MMYY = "Mar-25"
+OPEN_BROWSER = 826, 1058
+BOX_NAME_CITY_1 = 596, 442
+SELECT_CITY_CHECKBOX_1 = 464, 501
+VIEW_CADASTROS = 135, 301
+VIEW_GMV = 137, 337
+VIEW_ONDEMAND = 142, 383
+VIEW_AGENDAMENTOS = 184, 435
+VIEW_AOPAX = 131, 487
+BOX_NAME_CITY_2 = 618, 556
+SELECT_CITY_CHECKBOX_2 = 464, 606
+VIEW_AOMOTO = 157, 533
+VIEW_AOSCH = 115, 583
+VIEW_AOGMV = 141, 638
+VIEW_ANALYSIS = 143, 686
+SELECT_EXPORTAR = 503, 212
+SELECT_PDF = 508, 354
+CONFIRM_EXPORTAR = 1110, 731
 
-
-mmyy = "Mar-25"
-open_browser = 826, 1058
-box_name_city_1 = 596, 442
-select_city_checkbox_1 = 566, 473 #novo, seleciona a cidade no checkbox 
-view_cadastros = 135, 301
-view_gmv = 137, 337
-view_ondemand = 142, 383
-view_agendamentos = 184, 435
-view_aopax = 131, 487
-box_name_city_2 = 618, 556
-select_city_checkbox_2 = 509, 626 #novo
-view_aomoto = 157, 533
-view_aosch  = 115, 583
-view_aogmv = 141, 638
-view_analysis = 143, 686
-select_exportar = 503, 212
-select_pdf = 508, 354
-confirm_exportar = 1110, 731
-
-
-files_created = os.listdir('C:\\Users\\gabri\\OneDrive - ladydriver.com.br\\Downloads_relatorios')
+FILES_CREATED = os.listdir('C:\\Users\\gabri\\OneDrive - ladydriver.com.br\\Downloads_relatorios')
