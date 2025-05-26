@@ -5,28 +5,23 @@ class CreateRoute(object):
 
     def __init__(self, city, month):
 
-        self.city = city,
+        self.city = city
         self.month = month
 
 
     def rename_file(self):
 
+        #Renomear_o_arquivo
         new_name_city = f'Relatorios_Operacionais-{self.city}-{self.month}.pdf'
 
-        before_name = ('C:\\Users\\gabri\\OneDrive - ladydriver.com.br\\Downloads_relatorios\\'
-                       'Relatórios Operacionais.pdf')
+        before_name = 'C:\\Users\\gabri\\OneDrive - ladydriver.com.br\\Downloads_relatorios\\Relatórios Operacionais.pdf'
 
         new_name = f'C:\\Users\\gabri\\OneDrive - ladydriver.com.br\\Downloads_relatorios\\{new_name_city}'
 
         os.rename(before_name, new_name)
 
-        return new_name
 
-
-    def create_folder(self):
-
-        route_download = self.rename_file()
-
+        #Create_folder
         folder_month = (f'C:\\Users\\gabri\\OneDrive - ladydriver.com.br\\Backup_Lady\\Cidades\\{self.city}\\'
                   f'Relatório Operacional\\{self.month}')
 
@@ -38,31 +33,28 @@ class CreateRoute(object):
             shutil.rmtree(folder_month)
             os.mkdir(folder_month)
 
-            folder_download = route_download
+            folder_download = new_name
             folder_backup = folder_month
 
             shutil.copy(folder_download, folder_backup)
 
-            return folder_month
-
         except FileNotFoundError:
             os.mkdir(folder_month)
 
-            file_folder_download = route_download
+            file_folder_download = new_name
             file_folder_backup = folder_month
 
             shutil.copy(file_folder_download, file_folder_backup)
-
-            return folder_month
 
         except Exception as e:
             print(f'Error in create folder {self.month} for city: {self.city}')
 
 
-    def completed(self):
+        #Completed
+        folder_month_created = os.listdir(folder_month)
 
-        name_file = f'Relatorios_Operacionais-{self.city}-{self.month}'
-        response = name_file if name_file in os.listdir(self.create_folder()) else ('Error created folder month and copy '
-                                                                                 'file city to folder backup')
+        name_file = f'Relatorios_Operacionais-{self.city}-{self.month}.pdf'
+        response = name_file if name_file in folder_month_created else (f'Error created folder {self.month} and copy '
+                                                                        f'file {self.city} to folder backup')
 
         return response

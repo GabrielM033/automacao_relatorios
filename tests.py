@@ -15,16 +15,6 @@ class TestPosition(unittest.TestCase):
         print(posi)
 
 
-#Click in position
-class TestRoute(unittest.TestCase):
-
-    def test_route(self):
-
-        files = os.listdir('C:\\Users\\gabri\\OneDrive - ladydriver.com.br\\Downloads_relatorios')
-        print(files)
-
-
-
 class TestFile(unittest.TestCase):
 
     def test_file(self):

@@ -3,7 +3,7 @@
 import os
 import pyautogui as py
 
-MMYY = "Mar-25"
+MMYY = "Mai-25"
 OPEN_BROWSER = 826, 1058
 BOX_NAME_CITY_1 = 596, 442
 SELECT_CITY_CHECKBOX_1 = 464, 501
