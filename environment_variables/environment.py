@@ -1,25 +1,24 @@
-#Chamar a lib que abre o navegador diretamente
+from settings.settings import SettingsOperational, SettingsFinancial, DESKTOP, MONTH, URL_OPERATIONAL
 
-import os
-import pyautogui as py
+class Positions():
 
-MMYY = "Mai-25"
-OPEN_BROWSER = 826, 1058
-BOX_NAME_CITY_1 = 596, 442
-SELECT_CITY_CHECKBOX_1 = 464, 501
-VIEW_CADASTROS = 135, 301
-VIEW_GMV = 137, 337
-VIEW_ONDEMAND = 142, 383
-VIEW_AGENDAMENTOS = 184, 435
-VIEW_AOPAX = 131, 487
-BOX_NAME_CITY_2 = 618, 556
-SELECT_CITY_CHECKBOX_2 = 464, 606
-VIEW_AOMOTO = 157, 533
-VIEW_AOSCH = 115, 583
-VIEW_AOGMV = 141, 638
-VIEW_ANALYSIS = 143, 686
-SELECT_EXPORTAR = 503, 212
-SELECT_PDF = 508, 354
-CONFIRM_EXPORTAR = 1110, 731
+    def positions_click(self, report):
 
-FILES_CREATED = os.listdir('C:\\Users\\gabri\\OneDrive - ladydriver.com.br\\Downloads_relatorios')
+        if report == 'operational':
+
+            positions_op = SettingsOperational(DESKTOP, MONTH, URL_OPERATIONAL)
+            response = positions_op.settings_position()
+
+            return response
+
+        if report == 'financial':
+
+            positions_fin = SettingsFinancial(DESKTOP, MONTH)
+            response = positions_fin.settings_position()
+
+            return response
+
+
+
+
+
