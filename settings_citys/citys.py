@@ -1,7 +1,7 @@
 
 citys_list = {
     "Altamira": {
-        'active': 1,
+        'active': 0,
         'percentage': '15%'
     },
 
@@ -31,7 +31,7 @@ citys_list = {
     },
 
     "Balneário Camboriú": {
-        'active': 1,
+        'active': 0,
         'percentage': '15%'
     },
 
@@ -106,7 +106,7 @@ citys_list = {
     },
 
     "Chapecó": {
-        'active': 1,
+        'active': 0,
         'percentage': '12,5%'
     },
 
@@ -186,7 +186,7 @@ citys_list = {
     },
 
     "Hortolândia": {
-        'active': 1,
+        'active': 0,
         'percentage': '12,5%'
     },
 
@@ -281,7 +281,7 @@ citys_list = {
     },
 
     "Mogi Das Cruzes": {
-        'active': 1,
+        'active': 0,
         'percentage': '12,5%'
     },
 
@@ -356,7 +356,7 @@ citys_list = {
     },
 
     "Poá": {
-        'active': 1,
+        'active': 0,
         'percentage': '12,5%'
     },
 
@@ -450,18 +450,23 @@ citys_list = {
         'percentage': '10%'
     },
 
-    "São Paulo ZL": {
-        'active': 1,
-        'percentage': '12,5%'
-    },
-
-    "São Paulo ZO": {
+    "São Paulo": {
         'active': 1,
         'percentage': '10%'
     },
 
+    "São Paulo ZL": {
+        'active': 0,
+        'percentage': '12,5%'
+    },
+
+    "São Paulo ZO": {
+        'active': 0,
+        'percentage': '10%'
+    },
+
     "São Paulo ZS": {
-        'active': 1,
+        'active': 0,
         'percentage': '12,5%'
     },
 
@@ -496,7 +501,7 @@ citys_list = {
     },
 
     "Suzano": {
-        'active': 1,
+        'active': 0,
         'percentage': '12,5%'
     },
 
@@ -526,7 +531,7 @@ citys_list = {
     },
 
     "Uberlândia": {
-        'active': 1,
+        'active': 0,
         'percentage': '15%'
     },
 
@@ -546,7 +551,7 @@ citys_list = {
     },
 
     "Volta redonda": {
-        'active': 1,
+        'active': 0,
         'percentage': '15%'
     },
 
