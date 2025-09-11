@@ -1,21 +1,18 @@
 import pyautogui as py
 import webbrowser
-import unittest
 import keyboard
 import time
 import os
-
-# from settings_citys.citys_test import citys_list
 
 from settings_citys.citys import citys_list
 from environment_variables.environment import Positions
 from services.services_route import CreateRoute, ConsultationFile
 
 
+class StartOperational:
 
-class StartOperational(unittest.TestCase):
-
-    def test_relatorio_operational(self):
+    @staticmethod
+    def report_operational():
 
         REPORT = 'operational'
 
@@ -141,7 +138,9 @@ class StartOperational(unittest.TestCase):
                     print(e)
                     continue
 
-        print(list_citys_created)
+        return list_citys_created
 
 
-            
+if __name__ == '__main__':
+    start = StartOperational.report_operational()
+    print(start)
