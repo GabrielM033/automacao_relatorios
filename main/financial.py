@@ -1,11 +1,8 @@
 import os
 import keyboard
-import unittest
 import time
 import pyautogui as py
 import webbrowser
-
-# from settings_citys.citys_test import citys_list
 
 from settings_citys.citys import citys_list
 from environment_variables.environment import Positions
@@ -13,9 +10,10 @@ from services.services_route import ConsultationFile, CreateRoute
 from settings.settings import URL_FINANCIAL_10, URL_FINANCIAL_125, URL_FINANCIAL_15, URL_FINANCIAL_20
 
 
-class TestStartFinancial(unittest.TestCase):
+class StartFinancial:
 
-    def test_relatorio_financial(self):
+    @staticmethod
+    def report_financial():
 
         REPORT = 'financial'
 
@@ -130,4 +128,9 @@ class TestStartFinancial(unittest.TestCase):
 
                 last_percentage_processed = settings_city_select['percentage']
 
-        print(f'List of citys createds: {list_citys_created}')
+        return list_citys_created
+
+
+if __name__ == '__main__':
+    start = StartFinancial.report_financial()
+    print(start)
