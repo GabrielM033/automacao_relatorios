@@ -1,19 +1,20 @@
-# Criar um objeto "SettingsOperational" e "SettingsFiancial" novo para os desktop novos: 'desktop_2', 'desktop_3' e etc...
-
-URL_FINANCIAL_10 = ('https://app.powerbi.com/groups/me/reports/8ffa1918-9b78-4f42-ac28-6b540553df4f/'
-                    'ReportSectionf74734c5a6ad30731242?ctid=ad905b11-40ec-4e81-be7c-8c604b7f00a3&experience=power-bi&clientSideAuth=0')
-URL_FINANCIAL_125 = ('https://app.powerbi.com/groups/me/reports/4503ab71-45cf-4096-a35d-434ef6e5b56b/'
-                     'ReportSectionf74734c5a6ad30731242?ctid=ad905b11-40ec-4e81-be7c-8c604b7f00a3&experience=power-bi&clientSideAuth=0')
-URL_FINANCIAL_15 = ('https://app.powerbi.com/groups/me/reports/b5e2efb6-c167-4b9e-be81-12519f6e3429/'
-                    'ReportSectionf74734c5a6ad30731242?ctid=ad905b11-40ec-4e81-be7c-8c604b7f00a3&experience=power-bi&clientSideAuth=0')
-URL_FINANCIAL_20 = ('https://app.powerbi.com/groups/me/reports/cbd44925-ddbe-4761-b63e-a0d1615e2895/'
-                    'ReportSectionf74734c5a6ad30731242?ctid=ad905b11-40ec-4e81-be7c-8c604b7f00a3&experience=power-bi&clientSideAuth=0')
-
-URL_OPERATIONAL = ('https://app.powerbi.com/groups/me/reports/8b282a72-2ea6-4c6f-9198-4634f9b2c056/'
-                   'ReportSection?ctid=ad905b11-40ec-4e81-be7c-8c604b7f00a3&experience=power-bi&clientSideAuth=0')
+# Inserir a URL referente ao acesso do dashboard, pois cada usuário possui uma URL diferente.
+# Atualizar a variável "DESKTOP", de acordo com o computador que será utilizado. Ex: desktop_1, desktop_2, etc.
+# Atualizar a variável "MONTH", de acordo com o mês dos relatórios.
+#
+# Obs: Cada máquina possui uma posição de interação com o dashboard, devido à diferença no tamanho da tela.
+# Sendo assim, é necessário coletar as posições para cada máquina que for executar o projeto. O "desktop_1" já possui essas posições.
 
 
-MONTH = "Jul-25"
+URL_FINANCIAL_10 = ()
+URL_FINANCIAL_125 = ()
+URL_FINANCIAL_15 = ()
+URL_FINANCIAL_20 = ()
+
+URL_OPERATIONAL = ()
+
+
+MONTH = "Set-25"
 DESKTOP = 'desktop_1'
 
 
@@ -53,8 +54,26 @@ class SettingsOperational(object):
 
         if self.desktop == 'desktop_2':
 
+            # Coletar os valores das chaves, em: services/positions.py...
             positions_desktop2 = {
-                "MMYY": self.month
+                "MMYY": self.month,
+                "OPEN_BROWSER": self.url,
+                "BOX_NAME_CITY_1": (),
+                "SELECT_CITY_CHECKBOX_1": (),
+                "VIEW_CADASTROS": (),
+                "VIEW_GMV": (),
+                "VIEW_ONDEMAND": (),
+                "VIEW_AGENDAMENTOS": (),
+                "VIEW_AOPAX": (),
+                "BOX_NAME_CITY_2": (),
+                "SELECT_CITY_CHECKBOX_2": (),
+                "VIEW_AOMOTO": (),
+                "VIEW_AOSCH": (),
+                "VIEW_AOGMV": (),
+                "VIEW_ANALYSIS": (),
+                "SELECT_EXPORTAR": (),
+                "SELECT_PDF": (),
+                "CONFIRM_EXPORTAR": ()
             }
             return positions_desktop2
 
@@ -80,5 +99,20 @@ class SettingsFinancial(object):
                 "SELECT_PDF": (507, 370),
                 "CONFIRM_EXPORTAR": (1114, 735)
             }
-
             return positions_desktop1
+
+        if self.desktop == 'desktop_2':
+
+            # Coletar os valores das chaves, em: services/positions.py...
+            positions_desktop2 = {
+                "MMYY": self.month,
+                "VIEW_GMV": (),
+                "BOX_NAME_CITY": (),
+                "SELECT_CITY_CHECKBOX": (),
+                "VIEW_RESUMO_DIARIO": (),
+                "VIEW_RESUMO_GERAL": (),
+                "SELECT_EXPORTAR": (),
+                "SELECT_PDF": (),
+                "CONFIRM_EXPORTAR": ()
+            }
+            return positions_desktop2
