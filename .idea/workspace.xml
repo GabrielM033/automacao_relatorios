@@ -7,10 +7,7 @@
     <list default="true" id="0e505243-2548-4b05-87ad-bcefb4e1d79f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/financial.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/financial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/operational.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/operational.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/settings/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +18,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="Dockerfile" />
       </list>
     </option>
   </component>
@@ -40,50 +38,50 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python tests.Python tests for citys.TestLoop.test_loop.executor": "Debug",
-    "Python tests.Python tests for environment.TestPositions.test_positions.executor": "Debug",
-    "Python tests.Python tests for environment.TestPositionsOperational.test_positions_click.executor": "Debug",
-    "Python tests.Python tests for financial.TestStartFinancial.test_relatorio_financial.executor": "Debug",
-    "Python tests.Python tests for operational.StartOperational.executor": "Run",
-    "Python tests.Python tests for operational.StartOperational.test_relatorio_operational.executor": "Debug",
-    "Python tests.Python tests for operational.TestStartOperational.executor": "Debug",
-    "Python tests.Python tests for operational.TestStartOperational.test_relatorio_operational.executor": "Debug",
-    "Python tests.Python tests for settings.TestSettingsOperational.test_settings.executor": "Debug",
-    "Python tests.Python tests for tests.TestClick.test_click.executor": "Debug",
-    "Python tests.Python tests for tests.TestDict.test_dict.executor": "Debug",
-    "Python tests.Python tests for tests.TestFile.test_file.executor": "Debug",
-    "Python tests.Python tests for tests.TestMath.test_math.executor": "Debug",
-    "Python tests.Python tests for tests.TestOpenBrowser.teste_browser.executor": "Debug",
-    "Python tests.Python tests for tests.TestPosition.test_position.executor": "Debug",
-    "Python tests.Python tests for tests.TestRenameFolder.test_rename.executor": "Run",
-    "Python tests.Python tests for tests.TestRoute.test_route.executor": "Debug",
-    "Python tests.Python tests for tests.TesteArray.test_constante.executor": "Debug",
-    "Python tests.Python tests for tests.TesteServicesRoute.test_services.executor": "Debug",
-    "Python tests.Python tests for tests.Testearray.test_array.executor": "Debug",
-    "Python tests.Python tests for tests.Testearray.test_constante.executor": "Debug",
-    "Python tests.Python tests in operational.py.executor": "Debug",
-    "Python.Run Operational.executor": "Debug",
-    "Python.Run operational.executor": "Debug",
-    "Python.financial.executor": "Debug",
-    "Python.operational.executor": "Debug",
-    "Python.positions.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "feature/card-3",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/gabri/automacao_relatorios/tasks/operational.py",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python tests.Python tests for citys.TestLoop.test_loop.executor&quot;: &quot;Debug&quot;,
+    &quot;Python tests.Python tests for environment.TestPositions.test_positions.executor&quot;: &quot;Debug&quot;,
+    &quot;Python tests.Python tests for environment.TestPositionsOperational.test_positions_click.executor&quot;: &quot;Debug&quot;,
+    &quot;Python tests.Python tests for financial.TestStartFinancial.test_relatorio_financial.executor&quot;: &quot;Debug&quot;,
+    &quot;Python tests.Python tests for operational.StartOperational.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for operational.StartOperational.test_relatorio_operational.executor&quot;: &quot;Debug&quot;,
+    &quot;Python tests.Python tests for operational.TestStartOperational.executor&quot;: &quot;Debug&quot;,
+    &quot;Python tests.Python tests for operational.TestStartOperational.test_relatorio_operational.executor&quot;: &quot;Debug&quot;,
+    &quot;Python tests.Python tests for settings.TestSettingsOperational.test_settings.executor&quot;: &quot;Debug&quot;,
+    &quot;Python tests.Python tests for tests.TestClick.test_click.executor&quot;: &quot;Debug&quot;,
+    &quot;Python tests.Python tests for tests.TestDict.test_dict.executor&quot;: &quot;Debug&quot;,
+    &quot;Python tests.Python tests for tests.TestFile.test_file.executor&quot;: &quot;Debug&quot;,
+    &quot;Python tests.Python tests for tests.TestMath.test_math.executor&quot;: &quot;Debug&quot;,
+    &quot;Python tests.Python tests for tests.TestOpenBrowser.teste_browser.executor&quot;: &quot;Debug&quot;,
+    &quot;Python tests.Python tests for tests.TestPosition.test_position.executor&quot;: &quot;Debug&quot;,
+    &quot;Python tests.Python tests for tests.TestRenameFolder.test_rename.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for tests.TestRoute.test_route.executor&quot;: &quot;Debug&quot;,
+    &quot;Python tests.Python tests for tests.TesteArray.test_constante.executor&quot;: &quot;Debug&quot;,
+    &quot;Python tests.Python tests for tests.TesteServicesRoute.test_services.executor&quot;: &quot;Debug&quot;,
+    &quot;Python tests.Python tests for tests.Testearray.test_array.executor&quot;: &quot;Debug&quot;,
+    &quot;Python tests.Python tests for tests.Testearray.test_constante.executor&quot;: &quot;Debug&quot;,
+    &quot;Python tests.Python tests in operational.py.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.Run Operational.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.Run operational.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.financial.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.operational.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.positions.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/CARD-4&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/gabri/automacao_relatorios/tasks/operational.py&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\gabri\automacao_relatorios\tasks" />
       <recent name="C:\Users\gabri\automacao_relatorios\services" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.financial">
+  <component name="RunManager" selected="Python.positions">
     <configuration name="financial" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="automacao_relatorios" />
       <option name="ENV_FILES" value="" />
@@ -182,9 +180,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.positions" />
         <item itemvalue="Python.financial" />
         <item itemvalue="Python.operational" />
-        <item itemvalue="Python.positions" />
         <item itemvalue="Python tests.Python tests for operational.StartOperational.test_relatorio_operational" />
         <item itemvalue="Python tests.Python tests for financial.TestStartFinancial.test_relatorio_financial" />
       </list>

@@ -1,0 +1,16 @@
+version: "3"
+services:
+
+  app_operational:
+    build:
+      dockerfile: dockerfile-operational
+      context: .
+    image: ${TAG_OPERATIONAL}
+    container_name: ${CONTAINER_OPERATIONAL}
+
+  app_financial:
+    build:
+      dockerfile: dockerfile-financial
+      context: .
+    image: ${TAG_FINANCIAL}
+    container_name: ${CONTAINER_FINANCIAL}

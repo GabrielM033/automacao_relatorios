@@ -50,3 +50,17 @@ cd main
 python financial.py
 ```
 
+## Docker
+Lembre-se: Caso queira utilizar o projeto dentro dos containers ao em vez de usar na sua máquina, é necessário criar a imagem do seu dispositivo dentro dos containers e lembrar de atualizar o [settings.py](settings/settings.py), igual descrito nos passos anteriores.
+
+Execute o seguinte comando para construir as imagens:
+```bash
+
+./run.sh
+```
+
+Execute o seguinte comando para enviar as imagens para o Docker Hub:
+```bash
+
+./push.sh
+```
