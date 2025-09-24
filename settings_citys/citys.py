@@ -1,4 +1,3 @@
-
 citys_list = {
     "Altamira": {
         'active': 0,
@@ -161,8 +160,8 @@ citys_list = {
     },
 
     "Goiânia": {
-        'active': 0,
-        'percentage': '15%'
+        'active': 1,
+        'percentage': '12,5%'
     },
 
     "Gravataí": {
@@ -445,13 +444,18 @@ citys_list = {
         'percentage': '12,5%'
     },
 
+    "São José dos Pinhais": {
+        'active': 1,
+        'percentage': '12,5%'
+    },
+
     "São Luís": {
         'active': 0,
         'percentage': '10%'
     },
 
     "São Paulo": {
-        'active': 1,
+        'active': 0,
         'percentage': '10%'
     },
 
@@ -537,6 +541,11 @@ citys_list = {
 
     "Uruguaiana": {
         'active': 0,
+        'percentage': '12,5%'
+    },
+
+    "Valinhos": {
+        'active': 1,
         'percentage': '12,5%'
     },
 
