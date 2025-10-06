@@ -41,7 +41,7 @@ citys_list = {
 
     "Bauru": {
         'active': 1,
-        'percentage': '12,5%'
+        'percentage': '20%'
     },
 
     "Belém": {
@@ -130,8 +130,8 @@ citys_list = {
     },
 
     "Curitiba": {
-        'active': 0,
-        'percentage': '12,5%'
+        'active': 1,
+        'percentage': '15%'
     },
 
     "Feira De Santana": {
@@ -351,7 +351,7 @@ citys_list = {
 
     "Piracicaba": {
         'active': 1,
-        'percentage': '145%'
+        'percentage': '14,5%'
     },
 
     "Poá": {
