@@ -7,7 +7,8 @@ import webbrowser
 from settings_citys.citys import citys_list
 from environment_variables.environment import Positions
 from services.services_route import ConsultationFile, CreateRoute
-from settings.settings import URL_FINANCIAL_10, URL_FINANCIAL_125, URL_FINANCIAL_15, URL_FINANCIAL_20
+from settings.settings import (URL_FINANCIAL_10, URL_FINANCIAL_125, URL_FINANCIAL_15, URL_FINANCIAL_20, URL_FINANCIAL_16,
+                               URL_FINANCIAL_30, URL_FINANCIAL_145)
 
 
 class StartFinancial:
@@ -56,6 +57,13 @@ class StartFinancial:
                             webbrowser.open(URL_FINANCIAL_125)
                             time.sleep(20)
 
+                    case '14,5%':
+
+                        if last_percentage_processed != '14,5%':
+                            py.hotkey('ctrl', 'w')
+                            webbrowser.open(URL_FINANCIAL_145)
+                            time.sleep(20)
+
                     case '15%':
 
                         if last_percentage_processed != '15%':
@@ -64,12 +72,26 @@ class StartFinancial:
                             webbrowser.open(URL_FINANCIAL_15)
                             time.sleep(20)
 
+                    case '16%':
+
+                        if last_percentage_processed != '16%':
+                            py.hotkey('ctrl', 'w')
+                            webbrowser.open(URL_FINANCIAL_16)
+                            time.sleep(20)
+
                     case '20%':
 
                         if last_percentage_processed != '20%':
 
                             py.hotkey('ctrl', 'w')
                             webbrowser.open(URL_FINANCIAL_20)
+                            time.sleep(20)
+
+                    case '30%':
+
+                        if last_percentage_processed != '30%':
+                            py.hotkey('ctrl', 'w')
+                            webbrowser.open(URL_FINANCIAL_30)
                             time.sleep(20)
 
                 time.sleep(10)

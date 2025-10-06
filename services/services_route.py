@@ -3,7 +3,7 @@ import shutil
 
 class CreateRoute(object):
 
-    def __init__(self, city, month, report, details = None):
+    def __init__(self, city, month, report, details=None):
 
         self.city = city
         self.month = month
