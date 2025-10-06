@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e505243-2548-4b05-87ad-bcefb4e1d79f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/automacao_relatorios.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/automacao_relatorios.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/push.sh" beforeDir="false" afterPath="$PROJECT_DIR$/push.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run.sh" beforeDir="false" afterPath="$PROJECT_DIR$/run.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/financial.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/financial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/services_route.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/services_route.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/settings/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/settings_citys/citys.py" beforeDir="false" afterPath="$PROJECT_DIR$/settings_citys/citys.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +74,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "feature/CARD-5",
+    "git-widget-placeholder": "feature/CARD-6",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/gabri/Downloads/automacao_relatorios",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
